@@ -21,8 +21,8 @@
 */
 
 let play = true;
-let dA = 1.75;   //Diffusion rate A
-let dB = 0.4;   //Diffusion rate B
+let dA = 1.5;   //Diffusion rate A
+let dB = 0.1;   //Diffusion rate B
 var f = 0.055;  //Feed
 var k = 0.062;  //Kill
 
@@ -123,7 +123,6 @@ function draw() {
         grid = next;
     }
 
-    text(floor(frameRate()), 10, 10);
 }
 
 // TODO #1 chemical is never used @crarojasca
