@@ -125,8 +125,7 @@ function draw() {
 
 }
 
-// TODO #1 chemical is never used @crarojasca
-function laplaceA(x, y, chemical) {
+function laplaceA(x, y) {
     var sumA = 0;
     sumA += grid[x][y].a * -1;
     sumA += grid[x - 1][y].a * 0.2;
