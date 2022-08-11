@@ -125,8 +125,12 @@ function draw() {
 
 }
 
-// TODO #1 chemical is never used @crarojasca
-function laplaceA(x, y, chemical) {
+//The laplace argument is calculated through the multiplication of the 3x3 submatrix 
+//in the point (x,y) with the kernel:
+// | 0.05 0.2 0.05 |
+// | 0.05  1  0.05 |
+// | 0.05 0.2 0.05 |
+function laplaceA(x, y) {
     var sumA = 0;
     sumA += grid[x][y].a * -1;
     sumA += grid[x - 1][y].a * 0.2;
